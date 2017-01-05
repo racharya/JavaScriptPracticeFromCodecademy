@@ -27,7 +27,10 @@ function main() {
 
     //above line selects and toggles all of the projects items
     //to select and toggle just this item we use this along with next as:
-    $(this).next().toggle(); //will only toggle projects of the item clicked on
+    //$(this).next().toggle(); //will only toggle projects of the item clicked on
+
+    //Slide projects onto and off the page
+    $(this).next().slideToggle(400);
 
 
 
@@ -37,6 +40,9 @@ function main() {
     //above code changes all of the buttons with class name projects-button.
     //But to change only the button we click we use this keyword and use is as:
     $(this).toggleClass('active');
+
+    //Change the text of the button once clicked
+    $(this).text('Projects Viewed');
   });
 
 }
