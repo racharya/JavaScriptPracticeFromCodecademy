@@ -18,7 +18,10 @@ function main() {
   $('.projects').hide();
 
   //attach on('click') with empty function for resent project button (.projects-button)
-  $('.projects-button').on('click', function(){});
+  $('.projects-button').on('click', function(){
+    //Selector for projects class and calling show function on it
+    $('.projects').show();
+  });
 
 }
 $(document).ready(main);
