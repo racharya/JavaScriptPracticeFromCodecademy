@@ -24,6 +24,9 @@ function main() {
 
     //Using toggle function to hide and show the element
     $('.projects').toggle();
+
+    //toggle a CSS class with a jQuery function
+    $('.projects-button').toggleClass('active');//css class (active) doesnot require dot in front of it
   });
 
 }
