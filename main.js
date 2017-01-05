@@ -13,5 +13,12 @@ function main() {
 
   //fadesIn all skillset elements for 1000 milliseconds
   $('.skillset').fadeIn(1000);
+
+  //Hide projects elements
+  $('.projects').hide();
+
+  //attach on('click') with empty function for resent project button (.projects-button)
+  $('.projects-button').on('click', function(){});
+
 }
 $(document).ready(main);
