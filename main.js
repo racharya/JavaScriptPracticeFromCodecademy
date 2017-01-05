@@ -23,10 +23,20 @@ function main() {
     //$('.projects').show();
 
     //Using toggle function to hide and show the element
-    $('.projects').toggle();
+    //$('.projects').toggle();
+
+    //above line selects and toggles all of the projects items
+    //to select and toggle just this item we use this along with next as:
+    $(this).next().toggle(); //will only toggle projects of the item clicked on
+
+
 
     //toggle a CSS class with a jQuery function
-    $('.projects-button').toggleClass('active');//css class (active) doesnot require dot in front of it
+    //$('.projects-button').toggleClass('active');//css class (active) doesnot require dot in front of it
+
+    //above code changes all of the buttons with class name projects-button.
+    //But to change only the button we click we use this keyword and use is as:
+    $(this).toggleClass('active');
   });
 
 }
