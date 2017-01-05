@@ -8,6 +8,10 @@ function main() {
   //write an alert on $skillset (variable)
   //alert($skillset);
 
+//hides all skillset elements
   $('.skillset').hide();
+
+  //fadesIn all skillset elements for 1000 milliseconds
+  $('.skillset').fadeIn(1000);
 }
 $(document).ready(main);
